@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc864053-a726-4153-8cb7-2deeb63a7e01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson45/controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson45/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson45/view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonpatterns.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonpatterns.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson45/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson45/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson45/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson45/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson45/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson45/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="22V5k1vFGqdPnQppW81ohJcGVoN" />
   <component name="ProjectViewState">
@@ -88,5 +94,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -6,6 +6,8 @@ class UserInterface:
             "Возможные варианты:"
             "\n 1 - добавить статью"
             "\n 2 - посмотреть все статьи"
+            "\n 3 - посмотреть конкретную статью"
+            "\n 4 - удалить статью"
             "\n q - выйти из программмы"
         )
         user_answer = input("Выберите вариант действия: ")
@@ -15,6 +17,11 @@ class UserInterface:
     def show_incorrect_answer_error(self, answer: str):
         print(" ОШИБКА! ".center(40, "*"))
         print(f"Варианта \"{answer}\" не существует!")
+        print("*" * 40)
+
+    def show_incorrect_title_error(self, user_title):
+        print(" ОШИБКА! ".center(40, "*"))
+        print(f"Статьи с названием \"{user_title}\" не существует!")
         print("*" * 40)
 
     def add_user_article(self):
@@ -35,6 +42,18 @@ class UserInterface:
         print(" Список всех статей ".center(40, "*"))
         for idx, article in enumerate(articles, start=1):
             print(f"{idx}. {article}")
+        print("*" * 40)
+
+    def get_user_article(self):
+        print(" Ввод названия статьи ".center(40, "*"))
+        user_article = input("Введите название статьи: ")
+        print("*" * 40)
+        return user_article
+
+    def show_user_article(self, article):
+        print(" Статья найдена. Информация о статье ".center(40, "*"))
+        for key in article:
+            print(f"{key} - {article[key]}")
         print("*" * 40)
 
 
