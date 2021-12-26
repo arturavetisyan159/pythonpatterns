@@ -10,12 +10,13 @@ from pathlib import Path
 
 class Article:
     """Описывает, как выглядит статья"""
-    def __init__(self, title, author, pages, publish_source, description):
+    def __init__(self, title, author, type, description, ingridients, cuisine):
         self.title = title
         self.author = author
-        self.pages = pages
-        self.publish_source = publish_source
+        self.type = type
         self.description = description
+        self.ingridients = ingridients
+        self.cuisine = cuisine
 
     def __repr__(self):
         return f'{self.author}. "{self.title}"'
@@ -64,9 +65,10 @@ class ArticleBase:
         article_dict = {
             'Название': article.title,
             'Автор': article.author,
-            'Количество страниц': article.pages,
-            'Источник': article.publish_source,
-            'Описание': article.description,
+            'Тип': article.type,
+            'Текстовое описание': article.description,
+            'Список ингридиентов': article.ingridients,
+            'Название кухни': article.cuisine
         }
         return article_dict
 

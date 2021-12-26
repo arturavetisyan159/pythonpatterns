@@ -17,12 +17,12 @@ class UserInterface:
         Возвращает user_answer как выбор пользователя.
         """
         print(' Ввод пользователя '.center(40, '*'))
-        print('Что хотим сделать со статьями?')
+        print('Что хотим сделать с рецептами?')
         print('Возможные варианты:'
-              '\n1 - добавить статью'
-              '\n2 - удалить статью'
-              '\n3 - посмотреть статью'
-              '\n4 - посмотреть все статьи'
+              '\n1 - добавить рецепт'
+              '\n2 - удалить рецепт'
+              '\n3 - посмотреть конкретный рецепт'
+              '\n4 - посмотреть все рецепты'
               '\nq - выйти из программы')
         user_answer = input('Выберите вариант действия: ')
         print('*' * 40)
@@ -43,13 +43,14 @@ class UserInterface:
         dict_article = {
             'Название': None,
             'Автор': None,
-            'Количество страниц': None,
-            'Источник': None,
-            'Описание': None,
+            'Тип': None,
+            'Текстовое описание': None,
+            'Список ингридиентов': None,
+            'Название кухни': None
         }
-        print(' Добавление статьи '.center(40, '*'))
+        print(' Добавление рецепта '.center(40, '*'))
         for key in dict_article:
-            dict_article[key] = input(f'Введите {key} статьи: ')
+            dict_article[key] = input(f'Введите {key} рецепта: ')
         print('*' * 40)
         return dict_article
 
@@ -57,8 +58,8 @@ class UserInterface:
         """
         Показывает страницу, где пользователь вводит название статьи.
         """
-        print(' Ввод названия статьи '.center(40, '*'))
-        user_title = input('Введите название статьи: ')
+        print(' Ввод названия рецепта '.center(40, '*'))
+        user_title = input('Введите название рецепта: ')
         print('*' * 40)
         return user_title
 
@@ -69,9 +70,9 @@ class UserInterface:
         Принимает article как словарь, затем в цикле выводит каждый
         параметр объекта статьи.
         """
-        print(' Информация о статье '.center(40, '*'))
+        print(' Информация о рецепта '.center(40, '*'))
         for key in article:
-            print(f'{key} статьи:\n{article[key]}')
+            print(f'{key} рецепта:\n{article[key]}')
         print('*' * 40)
 
     def user_show_all_articles(self, articles):
@@ -81,12 +82,12 @@ class UserInterface:
         Принимает articles как список, затем в цикле выводит каждую
         статью и нумеруя их.
         """
-        print(' Все статьи '.center(40, '*'))
+        print(' Все рецепты '.center(40, '*'))
         if articles:
             for idx, article in enumerate(articles, start=1):
                 print(f'{idx}. {article}')
         else:
-            print('Статей нет!')
+            print('Рецептов нет!')
         print('*' * 40)
 
     def show_incorrect_answer_error(self, answer):
@@ -103,6 +104,6 @@ class UserInterface:
         Показывает страницу с ошибкой о том, что было введено
         несуществующее название статьи.
         """
-        print(' ОШИБКА: Неправильное название статьи! '.center(40, '*'))
-        print(f'Статьи {title} не существует!')
+        print(' ОШИБКА: Неправильное название рецепта! '.center(40, '*'))
+        print(f'Рецепта {title} не существует!')
         print('*' * 40)
