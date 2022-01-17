@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc864053-a726-4153-8cb7-2deeb63a7e01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson46/lesson46.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson46/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson46/test_runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="dc864053-a726-4153-8cb7-2deeb63a7e01" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
