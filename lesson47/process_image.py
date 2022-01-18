@@ -39,7 +39,7 @@ def main():
 
     with ProcessPoolExecutor() as executor:
         executor.map(filter_image, images)
-        
+
 
     end_time = time.time()
     print(f"Время исполнения программы: {(end_time - start_time):.2f} секунд")
