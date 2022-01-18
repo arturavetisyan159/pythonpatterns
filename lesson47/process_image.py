@@ -1,6 +1,7 @@
 from PIL import Image, ImageFilter
 import multiprocessing
 import time
+from concurrent.futures import ProcessPoolExecutor
 
 def filter_image(img_name):
     print(f"{multiprocessing.current_process().name}: Работа с картинкой {img_name} началась!")
@@ -28,13 +29,17 @@ def main():
     # for img in images:
     #     filter_image(img)
 
-    for idx, img in enumerate(images, start=1):
-        proc = multiprocessing.Process(target=filter_image, name=f"Процесс{idx}", args=(img,))
-        processes.append(proc)
-        proc.start()
+    # for idx, img in enumerate(images, start=1):
+    #     proc = multiprocessing.Process(target=filter_image, name=f"Процесс {idx}", args=(img,))
+    #     processes.append(proc)
+    #     proc.start()
+    #
+    # for proc in processes:
+    #     proc.join()
 
-    for proc in processes:
-        proc.join()
+    with ProcessPoolExecutor() as executor:
+        executor.map(filter_image, images)
+        
 
     end_time = time.time()
     print(f"Время исполнения программы: {(end_time - start_time):.2f} секунд")
