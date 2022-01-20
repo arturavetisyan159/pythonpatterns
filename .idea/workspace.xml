@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc864053-a726-4153-8cb7-2deeb63a7e01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lesson48/safe_images.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson48/l48.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson48/l48.py" afterDir="false" />
     </list>
@@ -44,7 +45,7 @@
       <recent name="$PROJECT_DIR$/lesson45" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.l48">
+  <component name="RunManager" selected="Python.safe_images">
     <configuration name="l47" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,19 +130,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="safe_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonpatterns" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.10" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson46" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson48" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson46/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson48/safe_images.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,19 +152,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.l47" />
       <item itemvalue="Python.process_image" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.l48" />
+      <item itemvalue="Python.safe_images" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.safe_images" />
         <item itemvalue="Python.l48" />
         <item itemvalue="Python.process_image" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.l47" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>

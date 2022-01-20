@@ -31,29 +31,32 @@ class MyThread(threading.Thread):
 
 
 X = 0
-def increment(N):
+def increment(N, lock):
     print(f'{threading.current_thread().name} начал работу')
     global X
     for _ in range(N):
-        X += 1
+        with lock:
+            X += 1
     print(f'{threading.current_thread().name} закончил работу')
 
 def main():
-    N = 1_000_000_0
+    N = 1_000_000
     print("Главный поток начал работу")
 
-    thread1= threading.Thread(target=increment, name="Поток №1", args=(N,))
-    thread2 = threading.Thread(target=increment, name="Поток №2", args=(N,))
+    lock = threading.RLock()
+    # lock = threading.BoundedSemaphore(2)
+    thread1= threading.Thread(target=increment, name="Поток №1", args=(N, lock))
+    thread2 = threading.Thread(target=increment, name="Поток №2", args=(N, lock))
 
     my_thread = MyThread(1000000)
 
     start_time = time.time()
-    # thread1.start()
-    # thread2.start()
-    # thread1.join()
-    # thread2.join()
-    my_thread.start()
-    my_thread.join()
+    thread1.start()
+    thread2.start()
+    thread1.join()
+    thread2.join()
+    # my_thread.start()
+    # my_thread.join()
     end_time = time.time()
     print(f"Главный поток закончил работу за {start_time - end_time} сек")
     print(f"{X = }")
