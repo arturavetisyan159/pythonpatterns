@@ -90,7 +90,7 @@ def run():
     """
     # Тут настраиваем наш сервер
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind(('localhost', 8000))
+    server_socket.bind(('localhost', 5000))
     server_socket.listen()
 
     # В этом цикле происходит работа с клиентом
