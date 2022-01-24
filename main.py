@@ -1,15 +1,23 @@
 class String:
     def concatenate(self, string1: str, string2: str) -> str:
-        pass
+        return string1 + string2
 
     def make_uppercase(self, string: str) -> str:
-        pass
+        return string.upper()
 
     def make_lowercase(self, string: str) -> str:
-        pass
+        return string.lower()
 
     def capitalize(self, string: str) -> str:
-        pass
+        res = ""
+        for l in range(len(string)):
+            if l == 0 and 97 <= ord(string[1]) <= 122:
+                res += chr(ord(string[l]) - 32)
+            elif l != 0 and 65 <= ord(string[l]) <= 90:
+                res += chr(ord(string[l]) + 32)
+            else:
+                res += string[l]
+        return res
 
     def replace(self, string: str, pattern: str, replacement: str) -> str:
         length_pattern = len(pattern)
@@ -22,7 +30,11 @@ class String:
 
 def main():
     string = String()
+    print(string.concatenate("pyt", "hon"))
+    print(string.make_lowercase("PYTHON"))
+    print(string.make_uppercase("python"))
     print(string.replace("mama myla ramu", "mama", "rama"))
+    print(string.capitalize("artur"))
 
 
 if __name__ == '__main__':
